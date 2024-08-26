@@ -9,12 +9,12 @@ import com.wheat.algorithm.base.tree.TreeNode;
  **/
 public class TreeUtil {
 
-    public static TreeNode buildTree(int[] nums) {
+    public static TreeNode buildTree(Integer[] nums) {
         return buildTree(nums, 0);
     }
 
-    private static TreeNode buildTree(int[] nums, int i) {
-        if (i >= nums.length) {
+    private static TreeNode buildTree(Integer[] nums, int i) {
+        if (i >= nums.length || nums[i] == null) {
             return null;
         }
         TreeNode node = new TreeNode(nums[i]);

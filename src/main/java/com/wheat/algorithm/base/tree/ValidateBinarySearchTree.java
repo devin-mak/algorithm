@@ -13,7 +13,7 @@ import java.util.List;
 public class ValidateBinarySearchTree {
 
     public static void main(String[] args) {
-        int[] nums = {120,70,140,50,100,130,160,20,55,75,110,119,135,150,200};
+        Integer[] nums = {120,70,140,50,100,130,160,20,55,75,110,119,135,150,200};
         TreeNode treeNode = TreeUtil.buildTree(nums);
         ValidateBinarySearchTree validateBinarySearchTree = new ValidateBinarySearchTree();
         System.out.println(validateBinarySearchTree.isValidBST1(treeNode));
